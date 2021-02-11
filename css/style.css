@@ -1,0 +1,23 @@
+h1{
+font-family: sans-serif;
+}
+
+body{
+  font-size: 16px;
+}
+p{
+  font-weight: 600;
+  font-size: 1em;
+  font-style: oblique;
+  line-height: 4px;
+  text-align: center;
+}
+ul li:nth-child(1){
+  background-color: yellow;
+}
+ul li:nth-child(2){
+  background-color: red;
+}
+ul li:nth-child(3){
+  background-color: brown;
+}
