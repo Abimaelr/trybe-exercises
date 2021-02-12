@@ -1,13 +1,8 @@
-h1,p{
-    text-align: center;
-}
-li:hover{
-    background-color: aquamarine;
-}
-li:active{
-    font-family: monospace;
+div h3{
+    background-color: brown;
 }
 
-ul{
-    list-style: none;
+
+div:hover{
+    background-color: brown;
 }
