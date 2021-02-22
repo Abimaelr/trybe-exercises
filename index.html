@@ -4,16 +4,86 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 250px;
+        }
+        .cover{
+            background-color: teal;
+            text-align: center;
+        }
+        .cover h1{
+            color: white;
+        }
+        .nav li{
+            display: inline-block;
+            margin: 5px 20px;
+        }
+        article{
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        .general-info{
+            padding: 0 8%;
+        }
+        .general-info table{
+            display: inline-block;
+            margin: 10px;
+            border-style: groove;
+            padding: 5px;
+            margin: 20px 0;
+        }
+        .general-info table th{
+            border-style: double;
+            padding: 0 20px;
+        }
+        .general-info p{
+            display: inline-block;
+            text-align: justify;
+            width: 50%;
+            margin: 10px;
+        }
+        .general-info img{
+            display: inline-block;
+            margin: 10px;
+        }
+        
+        .fact{
+            width: 40%;
+            padding: 10px;
+            border-radius: 10px;
+            display: inline-block;
+            margin: auto;
+        }
+        .fact img{
+            width: 90%;
+        }
+
+        footer{
+            text-align: center;
+            padding: 10px;
+            color: white;
+            background-color: teal;
+            margin-top: 10px;
+        }
+
+
+    </style>
 </head>
 
 <body>
-   <header>
+   <header class="cover">
        <h1>Soco a 80Km/h: Conheça o Stomatopoda</h1>
-       <nav>
+       <nav class="nav">
            <ul>
-                <li>Página Inicial</li>
-                <li>Sobre</li>
-                <li>Contato</li>
+                <li><a href="" >Página Inicial</a></li>
+                <li><a href="" >Sobre</a></li>
+                <li><a href="" >Contato</a></li>
             </ul>
        </nav>
    </header>
@@ -56,16 +126,16 @@
             <p>O soco dele pode quebrar um aquário</p>
         </section>
         <section class="fact">
-            <h2>O murro dele pode doer</h2>
+            <h2>Cowboy</h2>
             <img src="https://cdn.noticias.ambientebrasil.com.br/wp-content/uploads/2019/12/olhos-visao-incrivel-camarao-mantis.jpg" alt="Bixinho Brabo">
             <p>Ele "soca" suas presas com suas garras com uma força de até 2,5 mil vezes seu peso, equivalendo a um tiro de pistola calibre 22</p>
         </section>
         <section class="bio">
             <h2>Para saber mais:</h2>
             <ul>
-                <li><a href="https://pt.wikipedia.org/wiki/Stomatopoda"></a></li>
-                <li><a href="https://www.greelane.com/pt/ci%C3%AAncia-tecnologia-matem%C3%A1tica/animais-e-natureza/mantis-shrimp-facts-4582442/"></a></li>
-                <li><a href="https://www.bichonativo.com.br/post/2018/03/20/curiosidade-animal-habilidades-do-tamarutaca#:~:text=Excelente%20golpeador%2C%20o%20tamarutaca%20%22soca,vis%C3%A3o%20em%20cores%20do%20mundo."></a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Stomatopoda">Wikipédia</a></li>
+                <li><a href="https://www.greelane.com/pt/ci%C3%AAncia-tecnologia-matem%C3%A1tica/animais-e-natureza/mantis-shrimp-facts-4582442/">Greelane</a></li>
+                <li><a href="https://www.bichonativo.com.br/post/2018/03/20/curiosidade-animal-habilidades-do-tamarutaca#:~:text=Excelente%20golpeador%2C%20o%20tamarutaca%20%22soca,vis%C3%A3o%20em%20cores%20do%20mundo.">Bicho nativo</a></li>
 
             </ul>
         </section>
