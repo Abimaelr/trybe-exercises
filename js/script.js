@@ -18,9 +18,9 @@ console.log("=============3==============");
 
 let avg = 0;
 for (let i = 0; i < numbers.length; i++) {
-    avg = + numbers[i];
+    avg += numbers[i];
 }
-avg = avg/(numbers.length)/
+avg = avg/(numbers.length);
 console.log("A média é: "+ avg);
 
 console.log("=============4==============");
@@ -57,5 +57,23 @@ else{
     console.log("Nenhum valor ímpar encontrado!");
 }
 console.log("=============7==============");
+let menor = numbers[0];
+for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] < menor) {
+        menor = numbers[i]
+    }
+}
+console.log("O número menor é: " + menor);
 console.log("=============8==============");
+let array = [];
+
+for(let i = 0; i < 25; i++){
+    array.push(i+1);
+}
+console.log(array);
+
 console.log("=============9==============");
+
+for(let i = 0; i < array.length; i++){
+    console.log(array[i]/2);
+}
