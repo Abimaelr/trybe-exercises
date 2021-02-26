@@ -119,3 +119,17 @@ else {
 
 
 console.log('\n---------b2--------\n\n');
+
+let numero = 11;
+let primo = 0;
+for(let check = 2; check < numero; numero ++){
+    if(numero%check == 0){
+        primo ++;
+    }
+}
+if(primo == 0){
+    console.log(`O número ${numero} é primo!`)
+}
+else{
+    console.log(`O número ${numero} não é primo`)
+}
