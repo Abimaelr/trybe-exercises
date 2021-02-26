@@ -43,11 +43,37 @@ for (let linha = 0; linha <= n; linha++) {
     saida = '';
 }
 
-
-
 console.log('\n---------4--------\n\n');
 
+//Verificar se N é um número ímpar
+saida = '';
+if(n%2 == 0){
+    console.log("n precisa ser um número ímpar!")
+}
+else{
+    //contar quantos números ímpares tem de 0 a n
+    let impares = 0;
+    for(let contar = 0; contar <= n; contar++){
+        if(contar%2 != 0){
+            impares++;
+        }
+    }
 
+    for(let linha = 0; linha <= n; linha ++){
+       
+        for(let espaco = impares; espaco > 0; espaco--){
+            saida += " ";
+        }
+        for(let col = 0; col < linha; col++){
+            saida += "*"
+        }
+        if ((linha % 2) != 0) {
+            console.log(saida);
+            impares --;
+        } 
+        saida = '';
+    }
+}
 
 
 console.log('\n---------b1--------\n\n');
