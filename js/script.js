@@ -58,25 +58,28 @@ function verificaPalindrome(nome){
 
 function indexOfMaior(array){
   let valores = array;
-  let maior = 0;
+  let maior = valores[0];
   let indexOfMaior = 0;
 
   for(let index = 1; index < valores.length; index++){
-    if(valores[index] > valores[index-1]){
+    if(valores[index] > maior){
       maior = valores[index];
       indexOfMaior = index;
-    } 
+    }
+
+
+ 
   }
   return indexOfMaior;
 }
 
 function indexOfMenor(array){
   let valores = array;
-  let menor = 0;
+  let menor = valores[0];
   let indexOfMenor = 0;
 
   for(let index = 1; index < valores.length; index++){
-    if(valores[index] < valores[index-1]){
+    if(valores[index] < menor){
       menor = valores[index];
       indexOfMenor = index;
     } 
@@ -84,3 +87,8 @@ function indexOfMenor(array){
   return indexOfMenor;
 }
 
+let array = [2, 4, 6, 7, 10, 0, -3];
+
+
+
+console.log(indexOfMaior(array))
