@@ -127,4 +127,26 @@ function verificaFimPalavra(inicio, fim){
 
 }
 
-console.log(verificaFimPalavra("trybe", "boioe"))
+
+const romanos ={
+  'I': 1,
+  'V': 5,
+  'X': 10,
+  'L': 40,
+  'C': 100,
+  'D': 500,
+  'M': 1000
+}
+
+let numero = 'MMCM';
+let decimal = 0;
+for(let index = 0; index < numero.length; index++){
+  decimal += romanos[numero[index]];
+  if(romanos[numero[index]] > romanos[numero[index - 1]]){
+    decimal -= 2*romanos[numero[index - 1]];
+  }
+
+}
+console.log(decimal);
+
+
