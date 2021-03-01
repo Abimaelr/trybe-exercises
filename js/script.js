@@ -1,4 +1,4 @@
-console.log("---------1-------");
+console.log("---------Parte 1-------");
 
 let info = {
     personagem: "Margarida",
@@ -40,5 +40,5 @@ let info2 = {
 
 
 
-console.log("---------2-------");
+console.log("---------Parte 2-------");
 
