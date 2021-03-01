@@ -86,9 +86,22 @@ function indexOfMenor(array){
   }
   return indexOfMenor;
 }
+function repeticao(entrada){
+  let array = entrada;
 
-let array = [2, 4, 6, 7, 10, 0, -3];
+  let valorMaior = array[indexOfMaior(array)];
+  let contagem = []
 
+  for(let index = 0; index <= valorMaior; index++){
+    contagem[index] = 0;
+  }
+  for(let index = 0; index < array.length; index++){
+    contagem[array[index]]++;
+  }
 
+  let repeticao = indexOfMaior(contagem);
 
-console.log(indexOfMaior(array))
+  return repeticao
+}
+
+console.log(repeticao([5, -4, -3, 5, 8, 2, -3]))
