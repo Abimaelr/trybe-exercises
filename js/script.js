@@ -104,4 +104,12 @@ function repeticao(entrada){
   return repeticao
 }
 
-console.log(repeticao([5, -4, -3, 5, 8, 2, -3]))
+function somaAteN(n){
+  let somatorio = 0;
+  for(let contador = 0; contador <= n; contador++){
+    somatorio += contador;
+  }
+  return somatorio;
+}
+
+console.log(somaAteN(6));
