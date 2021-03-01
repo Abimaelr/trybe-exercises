@@ -70,4 +70,17 @@ function indexOfMaior(array){
   return indexOfMaior;
 }
 
-console.log(indexOfMaior([2, 3, 6, 7, 10, 1]))
+function indexOfMenor(array){
+  let valores = array;
+  let menor = 0;
+  let indexOfMenor = 0;
+
+  for(let index = 1; index < valores.length; index++){
+    if(valores[index] < valores[index-1]){
+      menor = valores[index];
+      indexOfMenor = index;
+    } 
+  }
+  return indexOfMenor;
+}
+
