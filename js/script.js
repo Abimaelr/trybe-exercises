@@ -112,4 +112,19 @@ function somaAteN(n){
   return somatorio;
 }
 
-console.log(somaAteN(6));
+function verificaFimPalavra(inicio, fim){
+  if(fim.length > inicio.length) return("Valor Inválido");
+
+  let primeira = "";
+
+  for(let index = (inicio.length - fim.length); index < inicio.length; index++){
+    primeira += inicio[index];
+  }
+
+
+  if(primeira === fim) return true
+  else return false
+
+}
+
+console.log(verificaFimPalavra("trybe", "boioe"))
