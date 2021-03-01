@@ -138,15 +138,17 @@ const romanos ={
   'M': 1000
 }
 
-let numero = 'MMCM';
-let decimal = 0;
-for(let index = 0; index < numero.length; index++){
-  decimal += romanos[numero[index]];
-  if(romanos[numero[index]] > romanos[numero[index - 1]]){
-    decimal -= 2*romanos[numero[index - 1]];
+function romanToDecimal(numero){
+  let decimal = 0;
+  for(let index = 0; index < numero.length; index++){
+    decimal += romanos[numero[index]];
+    if(romanos[numero[index]] > romanos[numero[index - 1]]){
+      decimal -= 2*romanos[numero[index - 1]];
+    }
+  
   }
-
+  console.log(decimal);
+return(decimal);
 }
-console.log(decimal);
 
 
