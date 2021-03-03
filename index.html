@@ -48,8 +48,33 @@
         function corWhite(){
             document.getElementsByClassName("center-content")[0].style.backgroundColor = 'white'
         }
+
+        function title(text){
+            document.getElementsByClassName("title")[0].innerText = text
+        }
+
+        function upperCaseP(){
+            let text = document.getElementsByTagName("p");
+            for(let index = 0; index < text.length; index++){
+                document.getElementsByTagName("p")[index].innerText = text[index].innerText.toUpperCase();
+            }
+            
+        }
+
+
+        function pOnConsole(){
+            let text = document.getElementsByTagName("p");
+            for(let index = 0; index < text.length; index++){
+                console.log(text[index].innerText);
+            }
+            
+        }
+        paragraph("Lorem Ipsun")
         corTrybe();
         corWhite();
+        title("Exercício 5.1 - JavaScript")
+        upperCaseP();
+        pOnConsole();
         
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
