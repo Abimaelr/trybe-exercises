@@ -76,12 +76,30 @@
         paragrafo.innerText = "Olá"
         div_filha.appendChild(paragrafo)
         
-
-
         paragrafo.className = ''
        
+        let div_neta1 = document.createElement('div')
+        div_filha.appendChild(div_neta1)
+        div_neta1.className = "left-content"
 
+        let div_neta2 = document.createElement('div')
+        div_filha.appendChild(div_neta2)
+        div_neta2.className = "right-content"
 
+        let image = document.createElement('img')
+        div_neta1.appendChild(image)
+        image.src="https://picsum.photos/200"
+        image.className = "small-image"
+
+        let lista = document.createElement('ul')
+        div_neta2.appendChild(lista)
+        
+
+        for(let i = 1; i < 11; i++){
+            let listItem = document.createElement('li')
+            lista.appendChild(listItem)
+            listItem.innerText = i
+        }
 
     
 
