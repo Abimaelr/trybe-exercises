@@ -17,7 +17,7 @@ function createDaysOfTheWeek() {
 
   const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
   const holidays = [24,25,31]
- 
+  const fridays = [4, 11, 18, 25]
 
   //#days is a ID of the ul
   //.day is a class of the li
@@ -58,7 +58,33 @@ btnHoliday.addEventListener('click', function (){
     const elements = document.querySelectorAll('.holiday')
 
     for(let index = 0; index < elements.length; index++) elements[index].style.color = colorDays;
-    console.log(colorDays)
 
+})
+
+
+//Creating the holiday Button
+
+const btnFriday = document.createElement('button')
+
+btnFriday.innerText = "Fridays"
+
+btnContainer.appendChild(btnFriday)
+
+let stateBtn1 = true
+
+btnFriday.addEventListener('click', function (){
+    
+  
+
+    const elements = document.querySelectorAll('.friday')
+    if(stateBtn1){
+        for(let index = 0; index < elements.length; index++) elements[index].innerText = "Sextou";
+    }
+    else{
+        for(let index = 0; index < elements.length; index++) elements[index].innerText = fridays[index];
+       
+    }
+    
+    stateBtn1 = !stateBtn1
 })
 
