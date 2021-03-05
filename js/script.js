@@ -37,9 +37,9 @@ function createDaysOfTheWeek() {
       }
       
       daysList.appendChild(dayElement)
+
+     
   }
-
-
 //Creating the holiday Button
 
 const btnContainer = document.querySelector('.buttons-container')
@@ -88,3 +88,33 @@ btnFriday.addEventListener('click', function (){
     stateBtn1 = !stateBtn1
 })
 
+
+//----------------------------------
+
+
+function zoom_in(evt) {
+    evt.target.style.fontSize = '40px';
+  }
+
+function zoom_out(evt) {
+    evt.target.style.fontSize = '20px';
+  }
+  
+  daysList.addEventListener('mouseover', zoom_in);
+
+  daysList.addEventListener('click', zoom_out);
+
+
+
+  const tasks = document.querySelector('.my-tasks')
+
+  const add = document.querySelector('#btn-add')
+
+  add.addEventListener('click', function(){
+    const spn = document.createElement('span')
+    spn.innerText = document.querySelector('#task-input').value
+    
+    tasks.appendChild(spn)
+    console.log(spn)
+
+  })
