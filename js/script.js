@@ -44,5 +44,21 @@ function createDaysOfTheWeek() {
 
 const btnContainer = document.querySelector('.buttons-container')
 const btnHoliday = document.createElement('button')
+
 btnHoliday.innerText = "Holidays!"
+
 btnContainer.appendChild(btnHoliday)
+
+let stateBtn = true
+
+btnHoliday.addEventListener('click', function (){
+    const colorDays = stateBtn?"rgb(238,238,238)":"#777";
+    stateBtn = !stateBtn
+
+    const elements = document.querySelectorAll('.holiday')
+
+    for(let index = 0; index < elements.length; index++) elements[index].style.color = colorDays;
+    console.log(colorDays)
+
+})
+
