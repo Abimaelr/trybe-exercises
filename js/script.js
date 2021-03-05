@@ -37,8 +37,12 @@ function createDaysOfTheWeek() {
       }
       
       daysList.appendChild(dayElement)
-      
   }
 
 
+//Creating the holiday Button
 
+const btnContainer = document.querySelector('.buttons-container')
+const btnHoliday = document.createElement('button')
+btnHoliday.innerText = "Holidays!"
+btnContainer.appendChild(btnHoliday)
