@@ -6,7 +6,6 @@ function createDaysOfTheWeek() {
       const days = weekDays[index];
       const dayListItem = document.createElement('li');
       dayListItem.innerHTML = days;
-  
       weekDaysList.appendChild(dayListItem);
     };
   };
@@ -96,13 +95,13 @@ function zoom_in(evt) {
     evt.target.style.fontSize = '40px';
   }
 
-function zoom_out(evt) {
+function zoom_o(evt) {
     evt.target.style.fontSize = '20px';
   }
   
   daysList.addEventListener('mouseover', zoom_in);
 
-  daysList.addEventListener('click', zoom_out);
+  daysList.addEventListener('mouseout', zoom_o);
 
 
 
