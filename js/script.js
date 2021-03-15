@@ -9,3 +9,22 @@ for(let index = 0; index < statesList.length; index += 1){
 
     state.appendChild(stateItem);
 }
+
+const btn = document.querySelector('#submit');
+
+const bdy = document.querySelector('body');
+
+const data = document.createElement('div');
+
+data.className = 'allInfo';
+
+bdy.appendChild(data);
+
+
+
+
+
+
+// btn.addEventListener('click', function(evt){
+//     evt.preventDefault();
+// })
