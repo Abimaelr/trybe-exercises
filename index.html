@@ -10,29 +10,29 @@
     <form action="" method="get">
         <fieldset>
            <legend>Dados Pessoais </legend>
-            <input id="" maxlength="40" placeholder="Nome"/>
-            <input type="email" maxlength="40" placeholder="email">
-            <input type="number" maxlength="11" placeholder="CPF">
-            <textarea name="" id="" cols="30" rows="2" maxlength="200" placeholder="Endereço"></textarea>
-            <select name="" id="states">
+            <input id="" maxlength="40" placeholder="Nome" class = 'info'/>
+            <input type="email" maxlength="40" placeholder="email" class = 'info'>
+            <input class = 'info' type="number" maxlength="11" placeholder="CPF">
+            <textarea class = 'info' name="" id="" cols="30" rows="2" maxlength="200" placeholder="Endereço"></textarea>
+            <select class = 'info' name="" id="states">
             </select>
 
             <label for="apto">
-                <input type="radio" name="tipoCasa" id="apto">
+                <input class = 'info' type="radio" name="tipoCasa" id="apto" value="Apartamento">
                 Apartamento
             </label>
             <label for="casa">
-                <input type="radio" name="tipoCasa" id="casa">
+                <input class = 'info' type="radio" name="tipoCasa" id="casa" value="Casa">
                 Casa
             </label>
         </fieldset>
 
         <fieldset>
            <legend>Dados Último Emprego</legend>
-            <textarea name="" id="resumo" cols="70" rows="10" placeholder="Resumo do currículo"  maxlength="1000" required></textarea>
-            <textarea name="" id="resumo" cols="20" rows="2" placeholder="Cargo"  maxlength="40" required></textarea>
-            <textarea name="" id="resumo" cols="50" rows="10" placeholder="Descrição do Cargo"  maxlength="500" required></textarea>
-            <input type="date" name="" id="">
+            <textarea class = 'info' name="" id="resumo" cols="70" rows="10" placeholder="Resumo do currículo"  maxlength="1000" required></textarea>
+            <textarea class = 'info' name="" id="resumo" cols="20" rows="2" placeholder="Cargo"  maxlength="40" required></textarea>
+            <textarea class = 'info' name="" id="resumo" cols="50" rows="10" placeholder="Descrição do Cargo"  maxlength="500" required></textarea>
+            <input class = 'info' type="date" name="" id="">
         </fieldset>
         <input type="submit" value="Enviar!" id='submit'>
 </form>
