@@ -2,6 +2,7 @@ const statesList = ['Acre','Alagoas','Amapá','Amazonas','Bahia','Ceará','Distr
 
 const state = document.querySelector('#states');
 
+
 for(let index = 0; index < statesList.length; index += 1){
     const stateItem = document.createElement('option')
     

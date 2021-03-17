@@ -1,0 +1,10 @@
+body{
+    text-align: center;
+}
+form{
+    width: 800px;
+    margin: auto;
+}
+textarea{
+    resize: unset;
+}

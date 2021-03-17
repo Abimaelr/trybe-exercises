@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/Semantic-UI//semantic.min.css">
     <script src="/Semantic-UI/semantic.min.js"></script>
 </head>
 <body>
+    <h1>Curriculo</h1>
     <form class="ui form" action="" method="get">
         <fieldset>
            <legend>Dados Pessoais </legend>
@@ -20,14 +21,21 @@
             <select class = 'info' name="" id="states">
             </select>
 
-            <label for="apto">
-                <input class = 'info' type="radio" name="tipoCasa" id="apto" value="Apartamento">
-                Apartamento
-            </label>
-            <label for="casa">
-                <input class = 'info' type="radio" name="tipoCasa" id="casa" value="Casa">
-                Casa
-            </label>
+        
+            <div class="field">
+                <div class="ui radio checkbox">
+                    <input type="radio" name="frequency" checked="checked" id="casa">
+                    <label for = 'casa'>Casa</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui radio checkbox">
+                  <input type="radio" name="frequency" id='apto'>
+                  <label for='apto'>Apartamento</label>
+                </div>
+              </div>
+            
+           
         </fieldset>
 
         <fieldset>
@@ -37,7 +45,7 @@
             <textarea class = 'info' name="" id="resumo" cols="50" rows="10" placeholder="Descrição do Cargo"  maxlength="500" required></textarea>
             <input class = 'info' type="date" name="" id="">
         </fieldset>
-        <input type="submit" value="Enviar!" id='submit'>
+        <input class="ui button" type="submit" value="Enviar!" id='submit'>
 </form>
    
 </body>
